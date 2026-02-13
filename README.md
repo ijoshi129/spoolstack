@@ -1,31 +1,45 @@
-# Filament Manager
+# 🧵 SpoolStack
 
-A self-hosted web app for tracking your 3D printing filament inventory. Built with Next.js, SQLite, and Tailwind CSS.
+**Self-Hosted 3D Printing Filament Inventory Tracker**
 
-## Features
+SpoolStack is a clean, self-hosted web app for tracking your 3D printing filament spools. It comes pre-loaded with the Bambu Lab color catalog and lets you manage your inventory with filtering, search, and sorting.
 
-- **Spool Inventory** — Add, edit, and delete filament spools with brand, material, color, weight, price, and status tracking
-- **Color Catalog** — Pre-loaded Bambu Lab color catalog with hex swatches for quick spool entry. Add your own brands and colors through Settings
-- **Filtering & Search** — Filter by status, brand, material, or modifier. Full-text search across all spool fields
-- **Sorting** — Sort by date added, material, color family, or brand
-- **Settings Panel** — Manage brands, materials, modifiers, and color catalogs without touching the database directly
+---
 
-## Tech Stack
+## ✨ Features
 
-- **Framework:** Next.js 16 (App Router, Server Actions)
-- **Database:** SQLite via better-sqlite3
-- **ORM:** Drizzle ORM
-- **Styling:** Tailwind CSS 4
-- **Validation:** Zod
-- **Language:** TypeScript
+### Core Functionality
+- **🗂️ Spool Inventory**: Add, edit, and delete filament spools with brand, material, color, weight, price, and status tracking
+- **🎨 Color Catalog**: Pre-loaded Bambu Lab color catalog with hex swatches for quick spool entry
+- **🔍 Filtering & Search**: Filter by status, brand, material, or modifier. Full-text search across all spool fields
+- **🔃 Sorting**: Sort by date added, material, color family, or brand
 
-## Quick Start (Docker)
+### Configuration & Management
+- **⚙️ Settings Panel**: Manage brands, materials, modifiers, and color catalogs without touching the database directly
+- **🏷️ Custom Brands & Colors**: Add your own brands and colors through the Settings UI
+- **💾 Local Storage**: Data stored in a local SQLite file — no external database needed
+
+### Design & Architecture
+- **🚀 Server Actions**: Fast, type-safe mutations with Next.js Server Actions
+- **✅ Validation**: Schema-level validation with Zod
+- **🛠️ Type Safety**: Full TypeScript throughout the stack
+
+---
+
+## 📋 Requirements
+
+- Node.js 18+
+- npm
+
+---
+
+## 🚀 Quick Start (Docker)
 
 The easiest way to run this is with Docker.
 
 ```bash
-git clone <your-repo-url>
-cd filamentmanagment
+git clone https://github.com/ijoshi129/spoolstack
+cd spoolstack
 docker compose up -d
 ```
 
@@ -42,12 +56,9 @@ docker compose up -d --build
 
 Your data is safe — the database only gets created on first run.
 
-## Local Development
+---
 
-### Prerequisites
-
-- Node.js 18+
-- npm
+## 🛠️ Local Development
 
 ### Setup
 
@@ -70,7 +81,20 @@ npm run dev        # http://localhost:3000
 | `npm run db:setup` | Run `db:push` + `db:seed` (first-time setup) |
 | `npm run lint` | Run ESLint |
 
-## Project Structure
+---
+
+## ⚙️ Tech Stack
+
+- **Framework:** Next.js 16 (App Router, Server Actions)
+- **Database:** SQLite via better-sqlite3
+- **ORM:** Drizzle ORM
+- **Styling:** Tailwind CSS 4
+- **Validation:** Zod
+- **Language:** TypeScript
+
+---
+
+## 📁 Project Structure
 
 ```
 src/
@@ -88,8 +112,16 @@ src/
 └── lib/              # Shared utilities (db connection, validation, formatting)
 ```
 
-## Notes
+---
 
-- Data is stored in a local SQLite file — no external database needed
-- The app is designed for single-user, self-hosted use. There is no authentication
-- The seed script includes the full Bambu Lab filament color catalog. You can add more brands and colors through the Settings UI
+## 🛡️ Notes
+
+- **Single User**: Designed for single-user, self-hosted use — there is no authentication
+- **Local Data**: All data lives in a local SQLite file, no external database needed
+- **Seed Data**: The seed script includes the full Bambu Lab filament color catalog. Add more brands and colors through the Settings UI
+
+---
+
+## 📄 License
+
+See [LICENSE](LICENSE) file for details.

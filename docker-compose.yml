@@ -1,13 +1,14 @@
 services:
-  filament-manager:
+  spoolstack:
+    container_name: spoolstack
     build: .
     ports:
       - "3000:3000"
     volumes:
-      - filament-data:/data
+      - spoolstack-data:/data
     environment:
       - DATABASE_URL=/data/sqlite.db
     restart: unless-stopped
 
 volumes:
-  filament-data:
+  spoolstack-data:

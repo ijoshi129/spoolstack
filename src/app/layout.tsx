@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Filament Manager",
+  title: "SpoolStack",
   description: "Track your 3D printing filament inventory",
 };
 
