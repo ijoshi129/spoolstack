@@ -2,6 +2,8 @@ import Link from "next/link";
 import { getSpools } from "@/actions/spools";
 import { SpoolList } from "@/components/SpoolList";
 
+export const dynamic = "force-dynamic";
+
 export default async function HomePage() {
   const result = await getSpools();
 

@@ -3,6 +3,8 @@ import { SpoolForm } from "@/components/SpoolForm";
 import { createSpool } from "@/actions/spools";
 import { getBrands, getMaterials, getModifiers } from "@/lib/materials";
 
+export const dynamic = "force-dynamic";
+
 export default function NewSpoolPage() {
   const brands = getBrands();
   const materials = getMaterials();
