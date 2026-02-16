@@ -58,7 +58,7 @@ Your data is safe — the database only gets created on first run.
 
 ---
 
-## 🛠️ Local Development
+## Local Development
 
 ### Setup
 
@@ -122,6 +122,6 @@ src/
 
 ---
 
-## 📄 License
+## License
 
 See [LICENSE](LICENSE) file for details.
