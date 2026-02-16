@@ -1,4 +1,4 @@
-# 🧵 SpoolStack
+# SpoolStack
 
 **Self-Hosted 3D Printing Filament Inventory Tracker**
 
@@ -6,34 +6,34 @@ SpoolStack is a clean, self-hosted web app for tracking your 3D printing filamen
 
 ---
 
-## ✨ Features
+## Features
 
 ### Core Functionality
-- **🗂️ Spool Inventory**: Add, edit, and delete filament spools with brand, material, color, weight, price, and status tracking
-- **🎨 Color Catalog**: Pre-loaded Bambu Lab color catalog with hex swatches for quick spool entry
-- **🔍 Filtering & Search**: Filter by status, brand, material, or modifier. Full-text search across all spool fields
-- **🔃 Sorting**: Sort by date added, material, color family, or brand
+- **Spool Inventory**: Add, edit, and delete filament spools with brand, material, color, weight, price, and status tracking
+- **Color Catalog**: Pre-loaded Bambu Lab color catalog with hex swatches for quick spool entry
+- **Filtering & Search**: Filter by status, brand, material, or modifier. Full-text search across all spool fields
+- **Sorting**: Sort by date added, material, color family, or brand
 
 ### Configuration & Management
-- **⚙️ Settings Panel**: Manage brands, materials, modifiers, and color catalogs without touching the database directly
-- **🏷️ Custom Brands & Colors**: Add your own brands and colors through the Settings UI
-- **💾 Local Storage**: Data stored in a local SQLite file — no external database needed
+- **Settings Panel**: Manage brands, materials, modifiers, and color catalogs without touching the database directly
+- **Custom Brands & Colors**: Add your own brands and colors through the Settings UI
+- **Local Storage**: Data stored in a local SQLite file — no external database needed
 
 ### Design & Architecture
-- **🚀 Server Actions**: Fast, type-safe mutations with Next.js Server Actions
-- **✅ Validation**: Schema-level validation with Zod
-- **🛠️ Type Safety**: Full TypeScript throughout the stack
+- **Server Actions**: Fast, type-safe mutations with Next.js Server Actions
+- **Validation**: Schema-level validation with Zod
+- **Type Safety**: Full TypeScript throughout the stack
 
 ---
 
-## 📋 Requirements
+## Requirements
 
 - Node.js 18+
 - npm
 
 ---
 
-## 🚀 Quick Start (Docker)
+## Quick Start (Docker)
 
 The easiest way to run this is with Docker.
 
@@ -83,7 +83,7 @@ npm run dev        # http://localhost:3000
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 - **Framework:** Next.js 16 (App Router, Server Actions)
 - **Database:** SQLite via better-sqlite3
@@ -94,7 +94,7 @@ npm run dev        # http://localhost:3000
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -114,7 +114,7 @@ src/
 
 ---
 
-## 🛡️ Notes
+## Notes
 
 - **Single User**: Designed for single-user, self-hosted use — there is no authentication
 - **Local Data**: All data lives in a local SQLite file, no external database needed
